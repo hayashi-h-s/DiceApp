@@ -40,11 +40,10 @@ public class MainActivity extends AppCompatActivity {
             myRandomNumber = random.nextInt(6);
             Dice_2.setImageResource(diceImages[myRandomNumber]);
 
-            YoYo.with(Techniques.Tada)
+            YoYo.with(Techniques.Bounce)
                     .duration(500)
                     .repeat(0)
                     .playOn(Dice_1);
-
 
             YoYo.with(Techniques.Tada)
                     .duration(500)
