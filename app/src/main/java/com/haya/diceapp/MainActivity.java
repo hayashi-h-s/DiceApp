@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     .repeat(0)
                     .playOn(Dice_1);
 
-            YoYo.with(Techniques.Tada)
+            YoYo.with(Techniques.BounceIn)
                     .duration(500)
                     .repeat(0)
                     .playOn(Dice_2);
