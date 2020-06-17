@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:background="#E91E63"
         android:fontFamily="sans-serif-medium"
+        android:soundEffectsEnabled="false"
         android:text="サイコロを振る！"
         android:textColor="#F4EEEE"
         android:textSize="30sp" />
@@ -42,14 +43,14 @@
         >
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/diceImage1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/dice2" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/diceImage2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
