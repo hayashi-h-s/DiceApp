@@ -1,14 +1,15 @@
 package com.haya.diceapp;
 
-import android.media.MediaParser;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 
 import java.util.Random;
 
@@ -38,6 +39,17 @@ public class MainActivity extends AppCompatActivity {
 
             myRandomNumber = random.nextInt(6);
             Dice_2.setImageResource(diceImages[myRandomNumber]);
+
+            YoYo.with(Techniques.Tada)
+                    .duration(500)
+                    .repeat(0)
+                    .playOn(Dice_1);
+
+
+            YoYo.with(Techniques.Tada)
+                    .duration(500)
+                    .repeat(0)
+                    .playOn(Dice_2);
 
             mp.start();
 
